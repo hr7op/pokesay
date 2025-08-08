@@ -1,10 +1,9 @@
 package msgCommands;
-
-import utils.TextWrapper;
-
 public class Colors {
 
     public static String coloredMsg(String color, String msg) {
+
+        color = color.toLowerCase();
 
         if (color.equals("red"))
             return "\u001B[31m" + msg + "\u001B[0m";

@@ -14,19 +14,21 @@ public class Commands {
     protected static String MapCommands(String cmd, String args[]) {
 
         String result = "";
-        for (int i = 2; i < args.length; i++) {
-            if (cmd.equals( "-c"))
-                continue;
+        int stindex = 2;
+
+        if (cmd.equals("-c"))
+            stindex = 3;
+        for (int i = stindex; i < args.length; i++) { 
             result += args[i] + " ";
         }
 
-        if (cmd.equals( "-h"))
+        if (cmd.equals("-h"))
             Help.help();
-        if (cmd.equals( "-c"))
+        if (cmd.equals("-c"))
             result = Colors.coloredMsg(args[2], result);
         else
             result = Styling.textStyling(cmd, result);
-        
+
         return result;
     }
 }

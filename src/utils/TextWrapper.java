@@ -1,8 +1,9 @@
 package utils;
+
 public class TextWrapper {
 
     public static String wordWrap(String text) {
-        int width = 40; //desired wrap width
+        int width = 40; // desired wrap width
         return wrapText(text, width);
     }
 
@@ -31,5 +32,5 @@ public class TextWrapper {
         }
 
         return wrappedText.toString();
-}
+    }
 }
