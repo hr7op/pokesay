@@ -26,16 +26,16 @@
 #026 Raichu
 #027 Sandshrew
 #028 Sandslash
-#029 Nidoran (F)
+#029 Nidoran♀
 #030 Nidorina
 #031 Nidoqueen
-#032 Nidoran (M)
+#032 Nidoran♂
 #033 Nidorino
 #034 Nidoking
 #035 Clefairy
 #036 Clefable
 #037 Vulpix
-#038 Ninetails
+#038 Ninetales
 #039 Jigglypuff
 #040 Wigglytuff
 #041 Zubat
