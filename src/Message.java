@@ -4,13 +4,21 @@ public class Message {
 
     protected static void printMessage(String message) {
 
-        System.out.println("-".repeat(message.length()));
+        if ((message.length() - 10) > 25)
+            System.out.println("-".repeat(41));
+        else
+            System.out.println("-".repeat(Math.abs(message.length() - 8)));
+
         System.out.print(TextWrapper.wordWrap(message));
-        System.out.println("-".repeat(message.length()));
+
+        if ((message.length() - 10) > 25)
+            System.out.println("-".repeat(41));
+        else
+            System.out.println("-".repeat(Math.abs(message.length() - 8)));
         System.out.print("""
-                    -0-
-                        -0-
-                            -0-
+                    O
+                        O
+                            O
                 """);
     }
 }

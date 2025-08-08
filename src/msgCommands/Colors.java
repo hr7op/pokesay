@@ -1,4 +1,5 @@
 package msgCommands;
+
 public class Colors {
 
     public static String coloredMsg(String color, String msg) {
@@ -19,9 +20,7 @@ public class Colors {
             return "\u001B[36m" + msg + "\u001B[0m";
         if (color.equals("black"))
             return "\u001B[30m" + msg + "\u001B[0m";
-        if (color.equals("white"))
-            return "\u001B[37m" + msg + "\u001B[0m";
 
-        return msg;
+        return "\u001B[37m" + msg + "\u001B[0m";
     }
 }
