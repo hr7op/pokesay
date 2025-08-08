@@ -14,21 +14,21 @@ public class pokesay {
         String message = "";
         if (InputValidation.validate(args)) {
 
-            if (args[1].startsWith("-")) { // for loop for multi commands?
-                if (Commands.manageCommands(args[1])) {
-                    message = Commands.MapCommands(args[1], args);
+            if (args[1].startsWith("-")) {
+                if (CommandsHandling.manageCommands(args[1])) {
+                    message = CommandsHandling.MapCommands(args[1], args);
                 }
             } else {
-                System.out.println("Entered");
                 for (int i = 1; i < args.length; i++) {
                     message += args[i] + " ";
                 }
+                message = "\u001B[37m" + message + "\u001B[0m"; // default white
             }
 
             if (PokemonList.MappedNum.equals(""))
                 PokemonList.MappedNum = args[0];
             String path = PokemonList.MappedNum + ".txt";
-            try (FileReader file = new FileReader(("D:\\OneDrive\\Desktop\\Ben10\\alien\\ascii\\" + path))) {
+            try (FileReader file = new FileReader(("D:\\OneDrive\\Desktop\\ben10\\pokesay\\ascii\\" + path))) {
 
                 Message.printMessage(message);
                 // pokemon ascii art
@@ -38,11 +38,9 @@ public class pokesay {
                     System.out.print((char) data);
                 }
             } catch (Exception e) {
-                System.out.println("Invalid format/parameter entered");
+                System.err.println("Invalid format/parameter entered [exit]");
             }
         } else
-            System.out.println("Check your field [exit]");
+            System.out.println("Check input protocols.\nType 'java pokesay -h' for Help menu [exit]");
     }
 }
-
-// ADD FEATURES. and commit common changes.

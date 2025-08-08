@@ -5,7 +5,7 @@ public class PokemonList {
     protected static String MappedNum="";
     protected static boolean searchList(String name) {
         try (var br = new BufferedReader(new InputStreamReader(
-                new FileInputStream("D:\\OneDrive\\Desktop\\Ben10\\alien\\ascii\\pokedex.txt")))) {
+                new FileInputStream("D:\\OneDrive\\Desktop\\ben10\\pokesay\\ascii\\pokedex.txt")))) {
             String str;
             while (br.ready()) {
                 str = br.readLine(); MappedNum=str.substring(1,str.indexOf(" "));
