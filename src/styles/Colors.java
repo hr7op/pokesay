@@ -1,4 +1,4 @@
-package msgCommands;
+package styles;
 
 public class Colors {
 

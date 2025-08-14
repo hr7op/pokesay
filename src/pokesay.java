@@ -1,5 +1,9 @@
 import java.io.FileReader;
 import java.util.Scanner;
+
+import checks.CommandsHandling;
+import checks.InputValidation;
+import checks.PokemonList;
 import utils.*;
 
 public class pokesay {
@@ -28,7 +32,7 @@ public class pokesay {
             if (PokemonList.MappedNum.equals(""))
                 PokemonList.MappedNum = args[0];
             String path = PokemonList.MappedNum + ".txt";
-            try (FileReader file = new FileReader(("D:\\OneDrive\\Desktop\\ben10\\pokesay\\ascii\\" + path))) {
+            try (FileReader file = new FileReader(("D:\\OneDrive\\Desktop\\pokesay\\ascii\\" + path))) {
 
                 Message.printMessage(message);
                 // pokemon ascii art

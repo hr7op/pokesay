@@ -1,6 +1,6 @@
-package msgCommands;
+package styles;
 
-public class Styling {
+public class textModifications {
 
     public static String textStyling(String cmd, String msg) {
 
