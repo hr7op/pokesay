@@ -11,7 +11,6 @@ public class pokesay {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         if (args[0].equals("-h"))
             Help.help();
 
