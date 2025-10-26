@@ -12,6 +12,8 @@ public class textModifications {
             return "\u001B[3m" + msg + "\u001B[0m";
         if (cmd.equals("-u"))
             return "\u001B[4m" + msg + "\u001B[0m";
+        if (cmd.equals("-st"))
+            return "\\u001B[9m" + msg + "\u001B[0m";
 
         return "\u001B[37m" + msg + "\u001B[0m";
     }
